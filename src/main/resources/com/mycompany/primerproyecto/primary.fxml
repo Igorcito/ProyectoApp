@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" prefHeight="512.0" prefWidth="579.0" spacing="20.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.primerproyecto.PrimaryController">
+   <children>
+      <Label alignment="CENTER" prefHeight="41.0" prefWidth="255.0" text="INICIAR SESIÓN" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font></Label>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="25.0" minHeight="9.0" prefHeight="9.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="177.0" text="USUARIO: " textFill="#ffc300">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin></Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="196.0" text="CONTRASEÑA:" textFill="#ffc300" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="42.0" />
+               </GridPane.margin></Label>
+            <PasswordField fx:id="pass" alignment="CENTER" text="Igorcito1234" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="name" alignment="CENTER" text="Igorcito" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button fx:id="login" onAction="#switchToSecondary" text="ENTRAR" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" left="25.0" right="25.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
